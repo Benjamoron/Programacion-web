@@ -1,0 +1,43 @@
+<!-- ✅ Ejercicio E: Lista de Tareas Pendientes
+Instrucciones:
+
+Crear una aplicación sencilla para gestionar tareas pendientes.
+
+Permitir agregar tareas con una descripción (campo de texto).
+
+Al agregarlas, deben aparecer en una lista en pantalla.
+
+Cada tarea debe tener un botón para marcarla como completada (solo cambiar el estilo de texto, por ejemplo, tacharlo).
+
+Opcional: incluir un botón para eliminar tareas individuales.
+
+La información puede almacenarse en un array. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="scriptE.js" defer></script>
+    <title>Document</title>
+    <style>
+        .completada {
+          text-decoration: line-through;
+        }
+      </style>
+</head>
+<body>
+    <header>
+        <h1>Lista de Tareas Pendientes</h1>
+    </header>
+
+    <section>
+        <form >
+                <label for="">Tarea Pendientes</label>
+                <input type="text" placeholder="Descripcion tarea" id="tarea">
+                <button type="button" id="AgregarTarea"> Agregar</button>
+     </form>
+    </section>
+    <h2>Tareas:</h2>
+    <ul id="ListaTareas"></ul>
+</body>
+</html>
